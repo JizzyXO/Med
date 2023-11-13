@@ -1,0 +1,16 @@
+﻿<Window x:Class="ProjectOne.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Оценка риска ВТЭО" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <CheckBox Content="Расчет фактора риска ВТЭО" Name ="chkPreviousVTE"/>
+        <Label Content="Вес (кг): "/>
+        <TextBox x:Name="txtWeight"/>
+        <Label Content="Рост (м): "/>
+        <TextBox x:Name="txtHeight"/>
+            <Button Content="Рассчитать риск" Click="CalculateRiskButton_Click"/>
+            <Label x:Name="lblResult"/>
+        </StackPanel>
+    </Grid>
+</Window>
